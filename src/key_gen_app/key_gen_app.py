@@ -14,7 +14,6 @@ def key_gen():
     try:
         key = "".join(random.sample(options, 50))
         text_box.insert("end", key, "center")
-        text_box.config(state="disabled")
     except Exception as e:
         text_box.insert("end", e)
 
